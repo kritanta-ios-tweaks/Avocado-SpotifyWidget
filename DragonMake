@@ -1,0 +1,22 @@
+---
+name: AvocadoSpotifyWidget
+icmd: sbreload
+depends: me.kritanta.avocado
+package: me.kritanta.avocadospotifywidget
+version: 1.0.0
+description: Spotify Widget for Avocado
+author: kritanta
+
+SpotifyWidget:
+  type: tweak
+  cflags: -F./libs/
+  ldflags: -Llibs
+  include:
+    - ./include/
+  libs:
+    - Avocado
+  frameworks:
+    - UIKit
+    - MediaRemote
+  files:
+    - SpotifyWidget.mm

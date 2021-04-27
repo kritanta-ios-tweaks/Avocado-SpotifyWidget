@@ -1,0 +1,12 @@
+--- !tapi-tbd-v3
+archs:           [ armv7, arm64, arm64e ]
+uuids:           [ 'armv7: 5088CD51-17D6-3E00-BAC9-82147843EBCA', 'arm64: A762BF27-A96C-39BB-A931-0EEBC0599504', 
+                   'arm64e: 34C8F5CB-20C4-3C2A-8E82-16941B253B9B' ]
+platform:        ios
+install-name:    '/Library/MobileSubstrate/DynamicLibraries/AvocadoEngine.dylib'
+current-version: 0
+compatibility-version: 0
+exports:         
+  - archs:           [ armv7, arm64, arm64e ]
+    objc-classes:    [ AVCWidget, AVCWidgetServer ]
+...
